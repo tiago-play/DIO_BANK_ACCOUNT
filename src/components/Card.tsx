@@ -1,20 +1,11 @@
-import { Header } from "./Header/Header"
-import { Footer } from "./Footer"
-import { Button } from "./Button"
-import { login  } from "../services/login"
 
+import { Box } from "@chakra-ui/react"
 
-
-export const Card = () => {
+export const Card = ({ children }: any) => {
+  
   return (
-    <>
-      <Header />
-        <p>Cadastre-se</p>
-        <input type="text" placeholder="email" />
-        <input type="password" placeholder="password" />
-        <Button onClick={login} text={'Cadastrar'} children={undefined} />
-      <Footer />
-    </>
-
+    <Box backgroundColor="#FFFFFF" borderRadius="25px" padding="10px">
+      { children }
+    </Box>
   )
 }
