@@ -7,7 +7,7 @@
  */
 
 import { Layout } from './components/Layout';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { ChakraProvider } from '@chakra-ui/react';
 import { AppContextProvider } from './components/AppContext';
 import MainRoutes from './routes'
